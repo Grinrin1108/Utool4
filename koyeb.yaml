@@ -1,0 +1,8 @@
+services:
+  - name: utool4
+    type: web
+    image: heroku/buildpacks:20
+    run_command: python main.py
+    ports:
+      - port: 8080
+        protocol: http
